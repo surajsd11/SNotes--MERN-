@@ -18,11 +18,7 @@ const { error } = require("console");
 
 app.use(express.json());
 
-app.use(cors({
-  origin: 'http://localhost:5173', // Specify your frontend's origin
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-  credentials: true,
-}));
+app.use(cors());
 
 app.get("/", (req, res) => {
   res.json({ data: "hello" });
