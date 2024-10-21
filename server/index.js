@@ -18,11 +18,7 @@ const { error } = require("console");
 
 app.use(express.json());
 
-app.use(
-  cors({
-    origin: "*",
-  }),
-);
+app.use(cors());
 
 app.get("/", (req, res) => {
   res.json({ data: "hello" });
