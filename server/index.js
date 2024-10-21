@@ -63,7 +63,7 @@ app.post("/create-account", async (req, res) => {
   });
 });
 
-app.post("/api/v1/login", async (req, res) => {
+app.post("/login", async (req, res) => {
   const { email, password } = req.body;
 
   if (!email && !password) {
