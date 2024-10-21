@@ -1,0 +1,1 @@
+export const BASE_URL = 'https://de6b1340-ac99-4139-9493-48b91854fafb-00-w69q0a5ncvej.sisko.replit.dev'
